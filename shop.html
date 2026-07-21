@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/splide.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./images/AllImage/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <title>Furniture 2 WordPress theme</title>
+</head>
+<body>
+    <div class="  d-flex justify-content-between py-1 align-items-center d-xl-none px-3">
+    
+        <div class="menu-icon class=" btn" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"">
+                            <i class=" fa-solid fa-bars"></i>
+        </div>
+    
+        <a href="./index.html">
+            <div class="logo  d-block d-xl-none   ">
+                <img src="./images/AllImage/logo-black.svg" alt="">
+            </div>
+        </a>
+        <div class=" compare compare-box  d-block p-1  rounded-5  text-black">
+            <i class="fa-solid fa-cart-shopping mt-2"></i>
+            <span id="zero" class="coun fw-lighter mt-1 me-1">0</span>
+    
+    
+        </div>
+    
+    </div>
+    <div class="offcanvas offcanvas-start" id="mobileMenu">
+        <div class="offcanvas-body p-0">
+    
+            <div class="p-3 border-bottom">
+                <div class="position-relative">
+                    <input type="text" class="form-control rounded-pill" placeholder="Search for products">
+    
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                </div>
+            </div>
+
+            <div class="tabs-header d-flex">
+                <button class="tab-btn active" id="catBtn">CATEGORIES</button>
+                <button class="tab-btn" id="menuBtn">MENU</button>
+            </div>
+            
+            <div class="tabs-content">
+            
+                <div class="categories-content  ">
+                <div class=" d-block d-xl-none ">
+                    <div class="more d-flex flex-column py-4 px-0 position-relative fw-semibold ">
+                        <div>
+                            <img src="./images/AllImage/Chair.svg">
+                            <span>Chairs</span>
+                        </div>
+                        <div>
+                            <img src="./images/AllImage/tables.svg">
+                            <span>Tables</span>
+                        </div>
+                        <div>
+                            <img src="./images/AllImage/sofass.svg">
+                            <span>Sofas</span>
+                        </div>
+                        <div>
+                            <img src="./images/AllImage/armchairs.svg">
+                            <span>Armchairs</span>
+                        </div>
+                        <div>
+                            <img src="./images/AllImage/beds.svg">
+                            <span>Beds</span>
+                        </div>
+                        <div>
+                            <img src="./images/AllImage/storage.svg">
+                            <span>Storage</span>
+                        </div>
+                        <div>
+                            <img src="./images/AllImage/texiles.svg">
+                            <span>Textiles</span>
+                        </div>
+                        <div>
+                            <img src="./images/AllImage/lighting.svg">
+                            <span>Lighting</span>
+                        </div>
+                        <div>
+                            <img src="./images/AllImage/toys.svg">
+                            <span>Toys</span>
+                        </div>
+                        <div>
+                            <img src="./images/AllImage/decor.svg">
+                            <span>Decor</span>
+                        </div>
+                
+                    </div>
+                </div>
+                </div>
+            
+                <div class="menu-content d-none">
+                    <span>Home</span>
+                    <span>Demos</span>
+                    <span>Blog</span>
+                    <span>About Us</span>
+                    <span>Contact Us</span>
+                    <span>Showrooms</span>
+                    <span>Gift Cards</span>
+                </div>
+            
+            </div>
+            </div>
+                
+    
+        </div>
+    </div>
+    <!-- header start -->
+    <header>
+        <div class=" d-none d-xl-block">
+            <div class="info d-flex justify-content-between align-items-center px-5">
+                <div class="d-flex gap-3 justify-content-center align-items-center">
+                    <div
+                        class="drop-down-box  py-2 position-relative d-flex gap-1 align-items-center border-end border-dark-subtle pe-3">
+                        <img src="./images/AllImage/eur.svg " alt=" image">
+                        <span class="fw-semibold">EUR</span><i class="fa-solid fa-chevron-down"></i>
+                        <div class="drop-down shadow  position-absolute start-0 top-100 bg-white rounded-2">
+                            <div class=" d-flex align-items-center justify-content-start py-2 overflow-y-hidden ps-2 gap-2"><img
+                                    src="./images/AllImage/canada.svg " alt=" image">
+                                <span class="fw-semibold">Canada</span>
+                            </div>
+                            <div class=" d-flex align-items-center justify-content-start py-3 ps-2 gap-2"><img
+                                    src="./images/AllImage/usa.svg " alt=" image">
+                                <span class="fw-semibold">USA</span>
+                            </div>
+                            <div class=" d-flex align-items-center justify-content-start py-3 ps-2 gap-2"><img
+                                    src="./images/AllImage/japan.svg " alt=" image">
+                                <span class="fw-semibold">Japan</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="links ps-3 d-flex align-content-center gap-3 fw-semibold">
+                        <a href="#">Gift Cards</a>
+                        <a href="#">Showrooms</a>
+                        <a href="#">About Us</a>
+                    </div>
+                </div>
+    
+                <div class="d-flex align-items-center justify-content-center">
+                    <div class="d-flex align-items-center gap-2 border-end border-dark-subtle pe-3">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>(686) 492-1044</span>
+    
+                    </div>
+                    <div class="d-flex align-items-center gap-2 px-3">
+                        <img src="./images/AllImage/faces.png" alt="">
+                        <span>Contact with an expert</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+        <nav id="navbar" class=" py-2 px-5">
+            <div class="d-flex gap-4 justify-content-between align-items-center">
+            <a href="./index.html">
+                <div class="logo  d-none d-xl-block  ">
+                    <img src="./images/AllImage/logo-black.svg" alt="">
+                </div>
+            </a>
+    
+                <div class=" d-none d-xl-block flex-grow-1  py-1 position-relative">
+                    <input class="w-100 shadow  border-0 rounded-5 py-2 px-5" id="main-search-input" type="search"
+                        placeholder="Search for product">
+                    <i class=" fa-solid fa-magnifying-glass text-secondary position-absolute start-0 py-3 px-3"></i>
+    
+                </div>
+                <div class="gap-3 actions d-flex justify-content-center align-items-center gap-2">
+                    <div class="compare  d-none d-xl-block ">
+                        <i class="fs-5 text-secondary fa-solid fa-shuffle"></i>
+                        <span class="counter  fw-lighter">0</span>
+                    </div>
+    
+                    <div class="compare  d-none d-xl-block ">
+                        <i class="fs-5  text-secondary fa-regular fa-heart"></i>
+                        <span class="counte fw-lighter">0</span>
+    
+                    </div>
+                    <div class="compare  d-none d-xl-block ">
+                        <i class=" text-secondary fa-regular fa-user"></i>
+                        <span class="fs-6 text-secondary">Login/Register</span>
+                    </div>
+                    <div
+                        class=" compare compare-box  d-none d-xl-block align-items-center justify-content-center   bg-black text-light">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span id="totalPriceBox">$0.00</span>
+                        <span class="countr  fw-lighter">0</span>
+    
+                    </div>
+                </div>
+    
+            </div>
+            <div class="d-none d-xl-block">
+                <div class="cont d-flex flex-row py-4 px-0 gap-4 position-relative fw-semibold ">
+                    <div>
+                        <img src="./images/AllImage/Chair.svg">
+                        <span>Chairs</span>
+                    </div>
+                    <div>
+                        <img src="./images/AllImage/tables.svg">
+                        <span>Tables</span>
+                    </div>
+                    <div>
+                        <img src="./images/AllImage/sofass.svg">
+                        <span>Sofas</span>
+                    </div>
+                    <div>
+                        <img src="./images/AllImage/armchairs.svg">
+                        <span>Armchairs</span>
+                    </div>
+                    <div>
+                        <img src="./images/AllImage/beds.svg">
+                        <span>Beds</span>
+                    </div>
+                    <div>
+                        <img src="./images/AllImage/storage.svg">
+                        <span>Storage</span>
+                    </div>
+                    <div>
+                        <img src="./images/AllImage/texiles.svg">
+                        <span>Textiles</span>
+                    </div>
+                    <div>
+                        <img src="./images/AllImage/lighting.svg">
+                        <span>Lighting</span>
+                    </div>
+                    <div>
+                        <img src="./images/AllImage/toys.svg">
+                        <span>Toys</span>
+                    </div>
+                    <div>
+                        <img src="./images/AllImage/decor.svg">
+                        <span>Decor</span>
+                    </div>
+                    <div class="last position-absolute end-0 rounded-5 p-1">
+                        <span>Free shipping for all orders of $1.300</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    
+    </header>
+<main class="class-box">
+        <!-- shop start -->
+        <section>
+        
+            <div class="img-shop d-flex justify-content-center align-items-center">
+                <img src="./images/AllImage/furniture-def-jpg.webp" alt="">
+                <h1 class="text-shop">Shop</h1>
+            </div>
+        </section>
+        <!-- shop end -->
+        <!-- section product start -->
+        <section class="shop-page">
+        
+            <!-- Sidebar -->
+            <aside class="sidebar d-none d-md-block w-100  rounded-3">
+                <div class="filter-box">
+                    <h5>Price</h5>
+        
+                    <input type="range" min="10" max="3620">
+        
+                    <div class="price-row">
+                        <span>Price: $10 — $3620</span>
+                        <button>Filter</button>
+                    </div>
+                </div>
+        
+                <div class="filter-box px-3">
+                    <h5>Brand</h5>
+                
+                    <div class="search-box">
+                        <input type="text" placeholder="Find a Brand">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                
+                    <div class="brands-list">
+                
+                        <div class="brand-item">
+                            <div class="brand-info">
+                                <img src="./images/AllImage/wd-furniture-brand-4mariani-100x56.jpg.webp" alt="">
+                                <span>4Mariani</span>
+                            </div>
+                            <span class="count">9</span>
+                        </div>
+                    <div class="brand-item">
+                        <div class="brand-info">
+                            <img src="./images/AllImage/wd-furniture-brand-bitte-100x56.jpg.webp" alt="">
+                            <span>Bitte</span>
+                        </div>
+                        <span class="count">4</span>
+                    </div>
+                
+                    <div class="brand-item">
+                        <div class="brand-info">
+                            <img src="./images/AllImage/wd-furniture-brand-elitis-100x56.jpg.webp" alt="">
+                            <span>Elitis</span>
+                        </div>
+                        <span class="count">8</span>
+                    </div>
+                    <div class="brand-item">
+                        <div class="brand-info">
+                            <img src="./images/AllImage/wd-furniture-brand-enza-home-100x56.jpg.webp" alt="">
+                            <span>Enza Home</span>
+                        </div>
+                        <span class="count">13</span>
+                    </div>
+                    <div class="brand-item">
+                        <div class="brand-info">
+                            <img src="./images/AllImage/wd-furniture-brand-flos-100x56.jpg.webp" alt="">
+                            <span>Flos</span>
+                        </div>
+                        <span class="count">8</span>
+                    </div>
+                    <div class="brand-item">
+                        <div class="brand-info">
+                            <img src="./images/AllImage/wd-furniture-brand-hay-100x56.jpg.webp" alt="">
+                            <span>Hay</span>
+                        </div>
+                        <span class="count">17</span>
+                    </div>
+                    <div class="brand-item">
+                        <div class="brand-info">
+                            <img src="./images/AllImage/wd-furniture-brand-kettal-100x56.jpg.webp " alt="">
+                            <span>Kettal</span>
+                        </div>
+                        <span class="count">15</span>
+                    </div>
+                </div>
+                <div class="color-filter px-3">
+        
+                    <h5 class="  mt-3">Color</h5>
+        
+                    <div class="search-box">
+                        <input type="text" placeholder="Find a Color">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+        
+                    <div class="colors-list">
+        
+                        <div class="color-item">
+                            <div class="left">
+                                <span class="color american"></span>
+                                <span>American Silver</span>
+                            </div>
+                            <span class="count">18</span>
+                        </div>
+        
+                        <div class="color-item">
+                            <div class="left">
+                                <span class="color bone"></span>
+                                <span>Bone</span>
+                            </div>
+                            <span class="count">24</span>
+                        </div>
+        
+                        <div class="color-item">
+                            <div class="left">
+                                <span class="color brown"></span>
+                                <span>Brown Sugar</span>
+                            </div>
+                            <span class="count">17</span>
+                        </div>
+                        <div class="color-item">
+                            <div class="left">
+                                <span class="color Dark-Gray "></span>
+                                <span>Dark Gray</span>
+                            </div>
+                            <span class="count">11</span>
+                        </div>
+                        <div class="color-item">
+                            <div class="left">
+                                <span class="color French-Bistre"></span>
+                                <span>French Bistre</span>
+                            </div>
+                            <span class="count">10</span>
+                        </div>
+                        <div class="color-item">
+                            <div class="left">
+                                <span class="color Grav"></span>
+                                <span>Grav</span>
+                            </div>
+                            <span class="count">10</span>
+                        </div>
+                        <div class="color-item">
+                            <div class="left">
+                                <span class="color Green"></span>
+                                <span>Green</span>
+                            </div>
+                            <span class="count">12</span>
+                        </div>
+                        <div class="color-item">
+                            <div class="left">
+                                <span class="color Jet"></span>
+                                <span>Jet</span>
+                            </div>
+                            <span class="count">28</span>
+                        </div>
+                        <div class="color-item">
+                            <div class="left">
+                                <span class="color Marigold "></span>
+                                <span>Marigold</span>
+                            </div>
+                            <span class="count">11</span>
+                        </div>
+        
+                        <div class="color-item">
+                            <div class="left">
+                                <span class="color brown"></span>
+                                <span>Pale Chestnut</span>
+                            </div>
+                            <span class="count">11</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="materials-box px-3">
+        
+                    <h5>Materials</h5>
+        
+                    <div class="materials-list">
+        
+                        <div class="material-item">
+                            <label>
+                                <input type="checkbox">
+                                Aluminium
+                            </label>
+                            <span class="count">7</span>
+                        </div>
+        
+                        <div class="material-item">
+                            <label>
+                                <input type="checkbox">
+                                Fabric
+                            </label>
+                            <span class="count">79</span>
+                        </div>
+        
+                        <div class="material-item">
+                            <label>
+                                <input type="checkbox">
+                                Glass
+                            </label>
+                            <span class="count">2</span>
+                        </div>
+        
+                        <div class="material-item">
+                            <label>
+                                <input type="checkbox">
+                                Leather
+                            </label>
+                            <span class="count">1</span>
+                        </div>
+        
+                        <div class="material-item">
+                            <label>
+                                <input type="checkbox">
+                                Metal
+                            </label>
+                            <span class="count">43</span>
+                        </div>
+        
+                    </div>
+        
+                </div>
+        
+                <div class="materials-box px-3">
+        
+                    <h3>Product status</h3>
+        
+                    <div class="materials-list">
+        
+                        <div class="material-item">
+                            <label>
+                                <input type="checkbox">
+                                On sale
+                            </label>
+        
+                        </div>
+        
+                        <div class="material-item">
+                            <label>
+                                <input type="checkbox">
+                                On stock
+                            </label>
+        
+                        </div>
+        
+                        <div class="material-item">
+                            <label>
+                                <input type="checkbox">
+                                On backorder
+                            </label>
+                        </div>
+        
+        
+                    </div>
+        
+                </div>
+                <div class="offer-card ">
+                
+                    <div class="offer-img ">
+                        <img src="./images/AllImage/wd-furniture-shop-banner.jpg" alt="">
+                    </div>
+                
+                    <div class="offer-content">
+                        <h3>Upholstered chair</h3>
+                        <p>Discount 10%</p>
+                
+                        <a href="#" class="shop-btn">
+                            Shop Now
+                        </a>
+                    </div>
+                
+                </div>
+            </aside>
+        
+            <!-- Products -->
+            <div class="products-section ">
+                <div class="shop-header d-flex flex-xxl-wrap flex-sm-row  align-items-center justify-content-between gap-0">
+        
+                    <p class="m-0 text-secondary px-5">
+                        Showing 1–18 of 162 results
+                    </p>
+        
+                    <div class="d-flex ">
+                        <p class="show-box text-secondary  ">
+                            <span class="text-black fw-bold ">Show :</span>
+                            9 / 12 / 18 / 24
+                        </p>
+        
+                        <div class="view-icons d-flex gap-3">
+                            <i class="fa-solid fa-bars"></i>
+                            <i class="fa-solid fa-grip"></i>
+                            <i class="fa-solid fa-table-cells"></i>
+                        </div>
+                    </div>
+        
+                    <div class="input-box">
+                        <input type="text" placeholder="Sort by average rating">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+        
+                </div>
+                <section class="shop-products mt-5">
+                </section>
+        
+            </div>
+            <!-- Sidebar -->
+            <!-- Products -->
+        </section>
+        <!-- section product end -->
+        <!-- header end -->
+        <div class="cart-layout ">
+            <div class="cart">
+                <div
+                    class="cart-header border-bottom border-secondary d-flex justify-content-between align-items-center px-1 py-2">
+                    <h5 class="fw-bold">Shopping Cart</h5>
+                    <button class="cartCloseBtn"><i class="fa-solid fa-xmark"></i> <span
+                            class="fs-6 fw-bold">Close</span></button>
+                </div>
+                <div id="cartBox" class="cart-box  d-flex flex-column align-items-center justify-content-center gap-2 py-3">
+                    <div class="cart-ico">
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </div>
+                    <div class="d-flex flex-column h-100">
+                        <p class="fw-bold">No products in the cart.</p>
+        
+                        <a class="car-btn rounded-pill py-2 px-3">Return To Shop</a>
+                    </div>
+                    <br>
+        
+                </div>
+                <div class="carTotal p-5 d-flex gap-1 justify-content-center align-items-center">
+                    <span class="fs-5 fw-bold">Total price: </span>
+                    <span class=" text-orange fw-bold" id="cartTotalBox">$0.00</span>
+                </div>
+            </div>
+        
+        </div>
+        <!-- cart end -->
+        <!-- alert start-->
+        <div class="alert-layout">
+            <div class="alert-box  shadow p-5 rounded-1 d-flex   align-items-center flex-column  rounded-2 gap-3">
+                <div class="alert-icon fs-2  bg-light    p-2 rounded-circle">
+                    <!-- <i class="fa-solid fa-check"></i> -->
+                </div>
+                <div class="alert-message text-capitalize text-center w-100 d-flex  align-items-center gap-3 flex-column">
+                    <span id="alert-pro-name" class="  text-danger-emphasis fs-3"></span>
+                    <p id="alert-message-box" class=" text-secondary fs-5">
+                        <!-- Added to cart! -->
+                    </p>
+                </div>
+                <div id="alert-action" class="text-capitalize d-none">
+                    <button id="deleteConfirm" class="btn btn-danger ">Sure </button>
+                    <button id="deleteCancel" class="btn btn-success ">No</button>
+                </div>
+            </div>
+        </div>
+        <!-- alert end-->
+        <section class="store-info store-box-1">
+            <div class="container py-5">
+        
+                <h4 class="fw-bold">Online store with a wide selection of furniture and decor</h4>
+        
+                <p class="fs-6">
+                    Furniture is an invariable attribute of any room. It is they who give it the right atmosphere, making the
+                    space cozy and
+                    comfortable, creating favorable conditions for productive work or helping to relax after a hard day. More
+                    and more
+                    often, customers want to place an order in an online store, when you can sit down at the computer in your
+                    free time,
+                    arrange the furniture in the photo and calmly buy the furniture you like. The online store has a large
+                    catalog of both
+                    home and office furniture.
+                </p>
+        
+                <div class="store-box">
+                    <h4 class="fw-bold">
+                        Furniture production is a modern form of art
+                    </h4>
+        
+                    <p class="fs-6">
+                        Furniture manufacturers, as well as manufacturers of other home goods, are full of amazing offers: we
+                        often come across
+                        both standard mass-produced products and unique creations – furniture from professional craftsmen, which
+                        will be
+                        appreciated by true connoisseurs of beauty. We have selected for you the best models from modern...
+                        <span id="moreText" style="display: none;">
+                            craftsmen who managed to ingeniously combine elegance, quality and practicality in each product
+                            unit. Our assortment
+                            includes products from proven companies. Who for many years of continuous joint work did not give
+                            reason to doubt their
+                            reliability and honesty. All of them guarantee the high quality of their products, excellent
+                            operational
+                            characteristics, attractive appearance of the products, a long period of use of the furniture, as
+                            well as safety.
+                        </span>
+                    </p>
+        
+                    <a href="#" id="readMoreBtn" class="read-more fs-6">
+                        Read more
+                    </a>
+                </div>
+            </div>
+        </section>
+</main>
+<!-- footer start -->
+
+<footer class="footer bg-black text-white pt-5">
+
+    <div class="container">
+
+        <!-- Top -->
+        <div class="row align-items-center pb-5">
+
+            <div class="woodmart col-lg-3 ">
+                <img src="./images/AllImage/white (1).svg" alt="">
+            </div>
+            <div class="cont-box-box col-lg-6 text-lg-end mt-4  mt-lg-0 ">
+                <h4 class="d-inline me-1 fs-5">Subscribe us:</h4>
+                <div class="social-icons">
+                    <div class="social-circle one-circle"><i class="fa-brands fa-facebook-f"></i></div>
+                    <div class="social-circle two-circle"><i class="fa-brands fa-x-twitter"></i></div>
+                    <div class="social-circle thire-circle"><i class="fa-brands fa-instagram"></i></div>
+                    <div class="social-circle four-circle"><i class="fa-brands fa-youtube"></i></div>
+                </div>
+
+            </div>
+
+            <!-- Links -->
+            <div class="row gy-4">
+
+                <!-- Useful Links -->
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="footer-title">Useful links</h3>
+
+                    <ul class="list-unstyled">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Showrooms</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                    </ul>
+                </div>
+
+                <!-- Categories -->
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="footer-title">Categories</h3>
+
+                    <div class="row">
+
+                        <div class="col-6">
+                            <ul class="list-unstyled">
+                                <li>Chair</li>
+                                <li>Tables</li>
+                                <li>Sofas</li>
+                                <li>Armchairs</li>
+                                <li>Beds</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-6">
+                            <ul class="list-unstyled">
+                                <li>Storage</li>
+                                <li>Textiles</li>
+                                <li>Lighting</li>
+                                <li>Toys</li>
+                                <li>Decor</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Empty Space -->
+                <div class="col-lg-1"></div>
+
+                <!-- App Download -->
+                <div class="app col-lg-4 text-lg-end ">
+                    <h3 class="footer-title fs-4">
+                        Download App on Mobile:
+                    </h3>
+
+                    <p class="text-secondary fs-6 py-2">
+                        15% discount on your first purchase
+                    </p>
+
+                    <div class="d-flex gap-3 flex-wrap justify-content-lg-end">
+                        <img src="./images/AllImage/google-play (1).svg" width="130">
+                        <img src="./images/AllImage/app-store.svg" width="130">
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="border-secondary my-5">
+
+            <!-- Bottom -->
+            <div class="d-flex flex-column   flex-lg-row justify-content-between align-items-center pb-4">
+
+                <p class="fsize mb-3 mb-lg-0 ">
+                    WoodMart © 2026 created by <span class=" text-light">Xtemos studio.</span> Premium e-commerce
+                    solutions.
+                </p>
+
+                <div class="cards d-flex gap-2">
+                    <img src="./images/AllImage/payments.png" width="270">
+
+                </div>
+
+            </div>
+
+        </div>
+
+</footer>
+<!-- footer end -->
+<!-- start butt -->
+<div
+    class="mobile-bottom-nav d-sm-flex d-xxl-none justify-content-around align-items-center fixed-bottom bg-white border-top shadow-sm">
+    <a href="#"
+        class="nav-item text-decoration-none d-flex flex-column align-items-center justify-content-center h-100">
+        <i class="fa-solid fa-house-chimney nav-icon mb-1"></i>
+        <span class="nav-label">Shop</span>
+    </a>
+    <a href="#"
+        class="nav-item text-decoration-none d-flex flex-column align-items-center justify-content-center h-100">
+        <div class="position-relative d-inline-block">
+            <i class="fa-regular fa-heart nav-icon"></i>
+            <span class="badg rounded-circle position-absolute translate-middle-y">0</span>
+        </div>
+        <span class="nav-label mt-1">Wishlist</span>
+    </a>
+    <a href="#"
+        class="nav-item text-decoration-none d-flex flex-column align-items-center justify-content-center h-100">
+        <!-- <div class="position-relative d-inline-block">
+            <i class="fa-solid fa-cart-shopping nav-icon"></i>
+        </div> -->
+        <div class=" compare compare-box  d-block   text-black">
+            <i class="fa-solid fa-cart-shopping mt-2"></i>
+            <!-- <span class="badge rounded-circle position-absolute translate-middle-y">0</span> -->
+
+
+        </div>
+        <span class="nav-label mt-1">Cart</span>
+    </a>
+    <a href="#"
+        class="nav-item text-decoration-none d-flex flex-column align-items-center justify-content-center h-100">
+        <i class="fa-regular fa-user nav-icon mb-1"></i>
+        <span class="nav-label">My account</span>
+    </a>
+
+</div>
+<!-- end butt -->
+    <script src="./main/jQuery.js"></script>
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="./main/splide.min.js"></script> -->
+    <script src="./main/shop.js"></script>
+</body>
+</html>
